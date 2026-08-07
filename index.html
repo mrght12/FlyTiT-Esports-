@@ -2,29 +2,164 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FlyTiT Esports — киберспортивная команда по CS2</title>
-    <meta name="description" content="FlyTiT Esports: тренировки, турниры, прогресс. Команда по CS2.">
-    <link rel="icon" href="/logo.png">
+    <meta name="description" content="FlyTiT Esports: тренировки, турниры, прогресс. Команда по CS2. Состав, новости, ссылки на соцсети.">
 
-    <!-- Это важно для показа логотипа в выдаче -->
+    <style>
+      :root {
+        --bg-dark: #0f1115;
+        --panel-dark: #1a1d24;
+        --accent: #8f4fff; /* неоновый фиолетовый */
+        --text-main: #ffffff;
+        --text-muted: #a0a0b0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg-dark);
+        color: var(--text-main);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .logo-wrapper {
+        display: inline-block;
+        position: relative;
+      }
+
+      .logo-img {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(143, 79, 255, 0.3);
+      }
+
+      h1 {
+        margin: 16px 0 8px;
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+
+      .tagline {
+        color: var(--accent);
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+      }
+
+      .intro {
+        background: var(--panel-dark);
+        padding: 24px;
+        border-radius: 12px;
+        border-left: 4px solid var(--accent);
+      }
+
+      .socials {
+        margin-top: 32px;
+      }
+
+      .socials h2 {
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+        color: var(--text-main);
+      }
+
+      .social-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .social-link {
+        display: block;
+        padding: 12px 20px;
+        background: #2a2e38;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        text-align: center;
+        min-width: 200px;
+      }
+
+      .social-link:hover {
+        background: var(--accent);
+        color: #000;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(143, 79, 255, 0.4);
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 48px;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+      }
+
+      @media (max-width: 600px) {
+        .container { padding: 16px; }
+        h1 { font-size: 1.5rem; }
+        .social-list { flex-direction: column; }
+        .social-link { min-width: 100%; }
+      }
+    </style>
+
+    <!-- Иконка вкладки браузера -->
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+
+    <!-- Schema.org: сигнал для Google про логотип -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "FlyTiT Esports",
-      "url": "https://flytit.github.io",
-      "logo": "https://flytit.github.io/logo.png"
+      "url": "https://mrght12.github.io",
+      "logo": "https://mrght12.github.io/logo.jpg"
     }
     </script>
   </head>
   <body>
-    <h1>FlyTiT Esports</h1>
-    <p>Киберспортивная команда по CS2. Тренировки, турниры, развитие.</p>
-    <p>Следи за нами:</p>
-    <ul>
-      <li><a href="https://x.com/FlyTiT_Esports">X (Twitter)</a></li>
-      <li><a href="https://youtube.com/@flytit_esports?si=vwYtNKVtyZJbFfuE">YouTube</a></li>
-    </ul>
+    <div class="container">
+      <header>
+        <div class="logo-wrapper">
+          <img src="logo.jpg" alt="FlyTiT Esports Logo" class="logo-img">
+        </div>
+        <h1>FlyTiT Esports</h1>
+        <div class="tagline">Киберспортивная команда по CS2</div>
+      </header>
+
+      <section class="intro">
+        <p>Мы тренируемся каждый день, разбираем раунды, работаем над сыгранностью и выступаем на турнирах. Для нас главное — стабильный прогресс и командный дух.</p>
+        <p><strong>Нет открытых заявок:</strong> путь в киберспорт начинается с прокачки своей игры. Тренируйся, улучшай статистику, и тебя обязательно заметят — не обязательно именно мы, но любая сильная команда.</p>
+      </section>
+
+      <section class="socials">
+        <h2>Следи за нами</h2>
+        <ul class="social-list">
+          <li><a href="https://x.com/FlyTiT_Esports" class="social-link" target="_blank" rel="noopener noreferrer">X (Twitter) — анонсы и моменты</a></li>
+          <li><a href="https://youtube.com/@flytit_esports?si=vwYtNKVtyZJbFfuE" class="social-link" target="_blank" rel="noopener noreferrer">YouTube — разборы и хайлайты</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        &copy; 2026 FlyTiT Esports. Все права защищены.
+      </footer>
+    </div>
   </body>
 </html>
-  
