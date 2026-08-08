@@ -90,12 +90,14 @@
       .player-avatar {
         width: 96px;
         height: 96px;
-        background: #2a2e38;
         border-radius: 50%;
         margin: 0 auto 12px;
         display: block;
-        /* Если будут картинки — раскомментируй и используй src */
-        /* object-fit: cover; */
+        object-fit: cover;
+        /* Логотип команды у всех игроков */
+        background-image: url('logo.jpg');
+        background-size: cover;
+        background-position: center;
       }
       .player-name {
         font-weight: 600;
@@ -196,22 +198,27 @@
           <div class="player-card">
             <span class="player-avatar"></span>
             <span class="player-name">martynandr</span>
-            <span class="player-role">Капитан</span>
+            <span class="player-role">Капитан (IGL)</span>
           </div>
           <div class="player-card">
             <span class="player-avatar"></span>
             <span class="player-name">mrght12</span>
-            <span class="player-role">Игрок</span>
+            <span class="player-role">Entry Fragger</span>
           </div>
           <div class="player-card">
             <span class="player-avatar"></span>
             <span class="player-name">Yunzyy3</span>
-            <span class="player-role">Игрок</span>
+            <span class="player-role">Рифлер</span>
           </div>
           <div class="player-card">
             <span class="player-avatar"></span>
             <span class="player-name">Zodvv1k</span>
-            <span class="player-role">Игрок</span>
+            <span class="player-role">AWP</span>
+          </div>
+          <div class="player-card">
+            <span class="player-avatar"></span>
+            <span class="player-name">RyukyuJK</span>
+            <span class="player-role">Саппорт</span>
           </div>
         </div>
       </section>
