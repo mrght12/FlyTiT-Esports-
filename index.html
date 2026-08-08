@@ -110,6 +110,35 @@
         text-transform: uppercase;
       }
 
+      /* Стили для достижений */
+      .achievements {
+        margin-top: 32px;
+      }
+      .achievements h2 {
+        margin-bottom: 16px;
+      }
+      .achievement-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+      }
+      .achievement-card {
+        background: var(--panel-dark);
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid #252930;
+        text-align: center;
+      }
+      .achievement-title {
+        font-weight: bold;
+        color: var(--text-main);
+      }
+      .achievement-desc {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-top: 4px;
+      }
+
       .socials {
         margin-top: 32px;
       }
@@ -215,10 +244,24 @@
             <span class="player-name">Zodvv1k</span>
             <span class="player-role">AWP</span>
           </div>
-          <div class="player-card">
-            <span class="player-avatar"></span>
-            <span class="player-name">RyukyuJK</span>
-            <span class="player-role">Саппорт</span>
+        </div>
+      </section>
+
+      <!-- Достижения -->
+      <section class="achievements">
+        <h2>Достижения</h2>
+        <div class="achievement-grid">
+          <div class="achievement-card">
+            <div class="achievement-title">2‑е место</div>
+            <div class="achievement-desc">Local CS2 Cup 2026</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-title">Топ‑4</div>
+            <div class="achievement-desc">Regional League S2</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-title">Победа в шоу‑матче</div>
+            <div class="achievement-desc">vs Team Nova (2:1)</div>
           </div>
         </div>
       </section>
