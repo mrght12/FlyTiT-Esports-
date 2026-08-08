@@ -68,6 +68,46 @@
         border-left: 4px solid var(--accent);
       }
 
+      /* Стили для состава */
+      .roster {
+        margin-top: 32px;
+      }
+      .roster h2 {
+        margin-bottom: 20px;
+      }
+      .roster-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 16px;
+      }
+      .player-card {
+        background: var(--panel-dark);
+        padding: 16px;
+        border-radius: 8px;
+        text-align: center;
+        border: 1px solid #252930;
+      }
+      .player-avatar {
+        width: 96px;
+        height: 96px;
+        background: #2a2e38;
+        border-radius: 50%;
+        margin: 0 auto 12px;
+        display: block;
+        /* Если будут картинки — раскомментируй и используй src */
+        /* object-fit: cover; */
+      }
+      .player-name {
+        font-weight: 600;
+        margin-bottom: 4px;
+        display: block;
+      }
+      .player-role {
+        color: var(--accent);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+      }
+
       .socials {
         margin-top: 32px;
       }
@@ -147,6 +187,33 @@
       <section class="intro">
         <p>Мы тренируемся каждый день, разбираем раунды, работаем над сыгранностью и выступаем на турнирах. Для нас главное — стабильный прогресс и командный дух.</p>
         <p><strong>Нет открытых заявок:</strong> путь в киберспорт начинается с прокачки своей игры. Тренируйся, улучшай статистику, и тебя обязательно заметят — не обязательно именно мы, но любая сильная команда.</p>
+      </section>
+
+      <!-- Состав команды -->
+      <section class="roster">
+        <h2>Состав команды</h2>
+        <div class="roster-grid">
+          <div class="player-card">
+            <span class="player-avatar"></span>
+            <span class="player-name">martynandr</span>
+            <span class="player-role">Капитан</span>
+          </div>
+          <div class="player-card">
+            <span class="player-avatar"></span>
+            <span class="player-name">mrght12</span>
+            <span class="player-role">Игрок</span>
+          </div>
+          <div class="player-card">
+            <span class="player-avatar"></span>
+            <span class="player-name">Yunzyy3</span>
+            <span class="player-role">Игрок</span>
+          </div>
+          <div class="player-card">
+            <span class="player-avatar"></span>
+            <span class="player-name">Zodvv1k</span>
+            <span class="player-role">Игрок</span>
+          </div>
+        </div>
       </section>
 
       <section class="socials">
